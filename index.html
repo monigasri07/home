@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Wellness Tracker</title>
+    <link rel="stylesheet" href="wellness.css">
+</head>
+<body>
+    <header>
+        <h1>Health and Wellness Tracker</h1>
+        <nav class="nav-links">
+            <a href="health.html">Home</a>
+            <a href="activities.html">View Activities</a>
+            <a href="today.html">Today's Activities</a>
+            <div id="profile" onclick="openProfilePage()">
+                <img src="login_img.jpg" alt="Profile" id="profile-icon">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="daily-quote">
+            <h2>Daily Motivation</h2>
+            <p id="quote"></p>
+        </section>
+        <section id="physical-activities" class="tracker-section">
+            <h2>Physical Activities</h2>
+            <div class="image-container">
+                <img src="physical_activities_img.jpg" alt="Physical Activity">
+                <div class="input-container">
+                    <div class="inputbox"><input type="text" id="activity" placeholder="Enter activity"></div>
+                    <div class="button"><button onclick="addActivity()">Add Activity</button></div>
+                </div>
+            </div>
+            <ul id="activity-list"></ul>
+        </section>
+        <section id="dietary-habits" class="tracker-section">
+            <h2>Dietary Habits</h2>
+            <div class="image-container">
+                <img src="Dietary_Habits_img.jpg" alt="Dietary Habits">
+                <div class="input-container">
+                    <div class="inputbox"><input type="text" id="diet" placeholder="Enter dietary habit"></div>
+                    <div class="button"><button onclick="addDiet()">Add Diet</button></div>
+                </div>
+            </div>
+            <ul id="diet-list"></ul>
+        </section>
+        <section id="sleep-patterns" class="tracker-section">
+            <h2>Sleep Patterns</h2>
+            <div class="image-container">
+                <img src="Sleep_Patterns_img.jpg" alt="Sleep Patterns">
+                <div class="input-container">
+                    <div class="inputbox"><input type="text" id="sleep" placeholder="Enter sleep hours"></div>
+                    <div class="button"><button onclick="addSleep()">Add Sleep</button></div>
+                </div>
+            </div>
+            <ul id="sleep-list"></ul>
+        </section>
+        <section id="mental-health" class="tracker-section">
+            <h2>Mental Health</h2>
+            <div class="image-container">
+                <img src="Mental_Health_img.jpg" alt="Mental Health">
+                <div class="input-container">
+                    <div class="inputbox"><input type="text" id="mental" placeholder="Enter mental health activity"></div>
+                    <div class="button"><button onclick="addMental()">Add Mental Health</button></div>
+                </div>
+            </div>
+            <ul id="mental-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Health_and_Wellness_Tracker</p>
+    </footer>
+    <script src="tracker.js"></script>
+    <script src="quotes.js"></script>
+</body>
+</html>
