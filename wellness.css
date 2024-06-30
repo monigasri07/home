@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f48a7f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav 
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a 
+{
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+
+
+#profile 
+{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+
+main 
+{
+    padding: 2rem;
+}
+
+#profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+#daily-quote 
+{
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.tracker-section 
+{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-container 
+{
+    position: relative;
+}
+
+.image-container img 
+{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: blur(2px);
+}
+
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputbox {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #f48a7f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f36a6a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f48a7f;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
