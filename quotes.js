@@ -12,4 +12,6 @@ function displayDailyQuote() {
     quoteElement.textContent = quotes[randomIndex];
 }
 
+// Call displayDailyQuote once when the page loads
+window.onload = displayDailyQuote;
 
