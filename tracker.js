@@ -1,9 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    if (!localStorage.getItem('loggedIn')) {
-        window.location.href = 'index.html';
-    }
-    displayDailyQuote();
-});
+
 
 function openProfilePage() {
     window.location.href = 'profile.html';
